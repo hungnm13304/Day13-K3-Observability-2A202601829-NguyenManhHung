@@ -3,15 +3,14 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from app.pii import PII_PATTERNS
+
 LOG_PATH = Path("data/logs.jsonl")
 REQUIRED_FIELDS = {"ts", "level", "service", "event", "correlation_id"}
 ENRICHMENT_FIELDS = {"user_id_hash", "session_id", "feature", "model"}
-PII_DETECTORS = {
-    "email": re.compile(r"[\w.-]+@[\w.-]+\.\w+"),
-    "phone_vn": re.compile(r"(?<!\d)(?:\+84|0)(?:[ .-]?\d){9}(?!\d)"),
-    "cccd": re.compile(r"\b\d{12}\b"),
-    "credit_card": re.compile(r"\b\d{4}[- ]?\d{4}[- ]?\d{4}[- ]?\d{4}\b"),
-}
+PII_DETECTORS = {name: re.compile(pattern) for name, pattern in PII_PATTERNS.items()}
 
 def main() -> None:
     if not LOG_PATH.exists():
