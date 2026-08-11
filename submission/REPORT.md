@@ -6,7 +6,7 @@
 - MSSV: **2A202601829**
 - Hình thức: **Bài cá nhân**
 - Repository URL: [Day13-K3-Observability-2A202601829-NguyenManhHung](https://github.com/hungnm13304/Day13-K3-Observability-2A202601829-NguyenManhHung)
-- Commit SHA cuối: _Lấy bằng `git rev-parse HEAD` sau commit cuối_
+- Commit SHA cuối: `cc0b974264a5132a3fe75009abe06243138d4eb3`
 - Thành viên và vai trò: Nguyễn Mạnh Hưng — Logging/PII, tracing, prompt versioning, dashboard và incident evidence.
 
 ## 2. Kết quả kỹ thuật
@@ -76,4 +76,4 @@ Với mỗi thành viên, ghi rõ nhiệm vụ và link commit/PR tương ứng.
 
 | Thành viên | Phần việc | Commit/PR | Điều đã học |
 |---|---|---|---|
-| Nguyễn Mạnh Hưng (2A202601829) | Logging/PII, Checkpoint 2, dashboard, prompt versioning, alerts và challenge evidence | _Điền commit SHA cuối_ | Tracing, prompt labels/version và điều tra metrics → traces → logs |
+| Nguyễn Mạnh Hưng (2A202601829) | Logging/PII, Checkpoint 2, dashboard, prompt versioning, alerts và challenge evidence | `cc0b974264a5132a3fe75009abe06243138d4eb3` | Tracing, prompt labels/version và điều tra metrics → traces → logs |
