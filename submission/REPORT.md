@@ -1,11 +1,13 @@
-# Báo cáo Day 13 Observability
+# Báo cáo cá nhân Day 13 Observability
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm: _Điền tên nhóm_
-- Repository URL: _Điền URL repository_
+- Họ và tên: **NGUYỄN MẠNH HƯNG**
+- MSSV: **2A202601829**
+- Hình thức: **Bài cá nhân**
+- Repository URL: [Day13-K3-Observability-2A202601829-NguyenManhHung](https://github.com/hungnm13304/Day13-K3-Observability-2A202601829-NguyenManhHung)
 - Commit SHA cuối: _Điền sau khi commit bài nộp_
-- Thành viên và vai trò: _Điền danh sách thành viên_
+- Thành viên và vai trò: Nguyễn Mạnh Hưng — Logging/PII, tracing, prompt versioning, dashboard và incident evidence.
 
 ## 2. Kết quả kỹ thuật
 
@@ -13,7 +15,7 @@
 - Tổng số traces: **31 traces** trong project Langfuse `Day13` tại thời điểm kiểm tra.
 - Số PII leak còn lại: **0**.
 - Kết quả `validate_dashboard.py`: **HỢP LỆ: 6/6 panel**.
-- Link/đường dẫn dashboard: _Điền link hoặc đường dẫn dashboard runtime_
+- Link/đường dẫn dashboard: [Dashboard runtime evidence](evidence/dashboard.png)
 
 Evidence:
 
@@ -40,13 +42,13 @@ Evidence:
 - Trace version 2/candidate: [trace-version-2-candidate.png](evidence/07-trace-version-2-candidate.png).
 - Production chuyển sang version 2: [production-version-2.png](evidence/08-production-version-2.png).
 - Trace metadata xác nhận `prompt_name`, `prompt_label` và `prompt_version` tương ứng với từng trace.
-- Bằng chứng rollback: _Bổ sung ảnh trace sau khi chuyển `production` về version 1._
+- Bằng chứng rollback: _Cần bổ sung ảnh trace sau khi chuyển `production` về version 1._
 
 ## 5. Dashboard, SLO và alerts
 
 - Kết quả `validate_dashboard.py`: **HỢP LỆ: 6/6 panel**.
 - Evidence validator: [validate-dashboard.txt](evidence/validate-dashboard.txt).
-- Evidence dashboard runtime: _Bổ sung ảnh dashboard đủ 6 nhóm chỉ số._
+- Evidence dashboard runtime: [dashboard.png](evidence/dashboard.png)
 - Dashboard sử dụng `data/logs.jsonl` và gồm latency P50/P95/P99, traffic, error rate, cost, tokens input/output và quality proxy.
 - SLO chính: P95 latency không vượt 3000 ms, error rate không vượt 2%, quality trung bình không thấp hơn 0.75. Các ngưỡng được chọn để phản ánh latency, độ ổn định và chất lượng trải nghiệm người dùng.
 - Alert rules và runbook: _Điền sau khi hoàn thiện `config/alert_rules.yaml` và `docs/alerts.md`._
@@ -73,4 +75,4 @@ Với mỗi thành viên, ghi rõ nhiệm vụ và link commit/PR tương ứng.
 
 | Thành viên | Phần việc | Commit/PR | Điều đã học |
 |---|---|---|---|
-| _Tên bạn_ | Checkpoint 2: Langfuse traces, prompt versioning, evidence dashboard/challenge | _Điền commit/PR_ | Tracing, prompt labels/version và điều tra metrics → traces → logs |
+| Nguyễn Mạnh Hưng (2A202601829) | Logging/PII, Checkpoint 2, dashboard, prompt versioning và challenge evidence | _Điền commit SHA cuối_ | Tracing, prompt labels/version và điều tra metrics → traces → logs |
