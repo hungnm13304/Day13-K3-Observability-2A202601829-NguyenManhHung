@@ -1,0 +1,9 @@
+Challenge trace evidence
+========================
+Challenge ID: day13-k3-observability-v1
+Incident: rag_slow
+Session ID: k3-challenge-s01
+Trace ID: bba43e0af0d3b37f1cb1f6b211f862d0
+Trace latency: 2.65 seconds
+Prompt: day13-chat / production / version 1
+Prompt source: langfuse

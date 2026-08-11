@@ -1,0 +1,2 @@
+{"event":"request_received","session_id":"k3-challenge-s01","feature":"refund","correlation_id":"req-7447d92b","user_id_hash":"026c7a407135"}
+{"event":"response_sent","session_id":"k3-challenge-s01","feature":"refund","correlation_id":"req-7447d92b","latency_ms":2650,"tokens_in":30,"tokens_out":165,"cost_usd":0.002565,"quality_score":0.9}

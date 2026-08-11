@@ -1,0 +1,16 @@
+{
+  "challenge_id": "day13-k3-observability-v1",
+  "cohort": "K3",
+  "incident": "rag_slow",
+  "affected_feature": "refund",
+  "latency_threshold_ms": 2000,
+  "metrics_after_challenge": {
+    "traffic": 6,
+    "latency_p50_ms": 2650.0,
+    "latency_p95_ms": 2650.0,
+    "latency_p99_ms": 2650.0,
+    "error_breakdown": {},
+    "quality_avg": 0.8667
+  },
+  "interpretation": "P95 latency 2650 ms exceeds the official 2000 ms challenge threshold."
+}
